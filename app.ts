@@ -4,9 +4,16 @@ let input2 = document.getElementById('input2') as HTMLInputElement;
 
 
 //Aplicação simples com TypeScript
-function adicionarNumero(numero1: number, numero2: number) {
+function adicionarNumero(numero1: number, numero2: number, devePrintar: boolean, frase: string) {
+    let resultado = numero1 + numero2
+    if (devePrintar) {
+        console.log(numero1 + numero2)
+    }
     return numero1 + numero2
 }
+
+let devePrintar = true
+let frase = "O valor é: "
 
 if(button) {
     button.addEventListener('click', () => {
